@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Here</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            const textToCopy = "";
+            navigator.clipboard.writeText(textToCopy)     
+            });
+        </script>
+    </head>
+
+
+    <body>
+        <center>
+            <h1>"Welcome, Agent007 — your mission begins now; decrypt the unknown, capture the flag, and leave no trace." 🕶️💻
+            </h1>
+            <p>To begin:<br>Illuminate the unseen layers; where surface ends, shadows reveal their secrets. 
+            </p>
+
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <!-- Look's like you found something, agent! Don’t forget, even the best ideas need a solid foundation—like a 64 at the base. -->
+                            <!-- L2FkaW8= -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div>
+                <div>
+                    <p>
+                        <a href="crazy.zip" style="color: white;" download="crazy.zip">
+                            ZIP File
+                        </a>
+                    </p>
+                <div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <input type="text" id="myTextBox" value="Copy Me 🙂" style="width: 300px; padding: 5px; font-size: 16px;">
+                <button onclick="copyText()" style="padding: 5px 10px; font-size: 16px; margin-left: 10px;">Copy</button>
+            </div>
+        </center>
+
+        <script>
+            function copyText() {
+                var textBox = document.getElementById("myTextBox");
+                navigator.clipboard.writeText(textBox.value)
+                    .then(() => {
+                        alert("Copied to clipboard!");
+                    })
+                    .catch(err => {
+                        alert("Failed to copy!");
+                    });
+            }
+        </script>
+    </body>
+
+
+</html>
