@@ -91,7 +91,7 @@
                 <span style="color: #888;">That’s all we know.</span>
             </div>
 
-            <button id="reload-copy-btn" style="
+            <button id="reload-btn" style="
                 padding:10px 16px;
                 border:none;
                 background:#888;
@@ -105,19 +105,7 @@
         </div>
         <img class="robot-image" src="../ieat/robot.png" alt="Robot Broken" height="200" width="1" />
     </div>
-
-    <script>
-        document.getElementById('reload-copy-btn').addEventListener('click', function () {
-            const textToCopy = '  D{           _connected}';
-            navigator.clipboard.writeText(textToCopy).then(function () {
-                location.reload();
-            }).catch(function (err) {
-                // Fallback for browsers that block Clipboard API
-                alert('Copy failed: ' + err + '\nPage will reload anyway.');
-                location.reload();
-            });
-        });
-    </script>
 </body>
 
 </html>
+
