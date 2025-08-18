@@ -1,11 +1,1 @@
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('reload-btn').addEventListener('click', function () {
-        const textToCopy = '  D{           _connected}';
-        navigator.clipboard.writeText(textToCopy).then(function () {
-            location.reload();
-        }).catch(function (err) {
-            //alert('Copy failed: ' + err + '\nPage will reload anyway.');
-            location.reload();
-        });
-    });
-});
+function _0x2790(_0x4c9944,_0x3cdce5){const _0x432a60=_0x432a();return _0x2790=function(_0x279075,_0x4b5660){_0x279075=_0x279075-0x181;let _0x2b7c64=_0x432a60[_0x279075];return _0x2b7c64;},_0x2790(_0x4c9944,_0x3cdce5);}const _0x322c2f=_0x2790;(function(_0x185b00,_0x308894){const _0x456eed=_0x2790,_0xc865e0=_0x185b00();while(!![]){try{const _0xa6bd93=parseInt(_0x456eed(0x181))/0x1+-parseInt(_0x456eed(0x195))/0x2+parseInt(_0x456eed(0x193))/0x3*(-parseInt(_0x456eed(0x18d))/0x4)+-parseInt(_0x456eed(0x191))/0x5*(parseInt(_0x456eed(0x187))/0x6)+-parseInt(_0x456eed(0x182))/0x7+parseInt(_0x456eed(0x18f))/0x8*(parseInt(_0x456eed(0x185))/0x9)+parseInt(_0x456eed(0x190))/0xa*(parseInt(_0x456eed(0x18c))/0xb);if(_0xa6bd93===_0x308894)break;else _0xc865e0['push'](_0xc865e0['shift']());}catch(_0x245fc7){_0xc865e0['push'](_0xc865e0['shift']());}}}(_0x432a,0x754e1),document[_0x322c2f(0x186)](_0x322c2f(0x188),function(){const _0x466d88=_0x322c2f;document[_0x466d88(0x18b)](_0x466d88(0x184))[_0x466d88(0x186)](_0x466d88(0x189),function(){const _0x2b152d=_0x466d88,_0x1bb374=_0x2b152d(0x194);navigator[_0x2b152d(0x18a)][_0x2b152d(0x196)](_0x1bb374)[_0x2b152d(0x192)](function(){location['reload']();})[_0x2b152d(0x18e)](function(_0x14da16){const _0x1a49ca=_0x2b152d;location[_0x1a49ca(0x183)]();});});}));function _0x432a(){const _0x3d2c46=['1591488fDsqNJ','writeText','878446TmDhTI','6570858zAILoD','reload','reload-btn','49365lfhUnt','addEventListener','28590bAqtuz','DOMContentLoaded','click','clipboard','getElementById','25414103Wybcki','20TnFkXa','catch','248dkFOWe','10ijJFYZ','575fJjhUO','then','357576RfRJgK','\x20\x20D{\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20_connected}'];_0x432a=function(){return _0x3d2c46;};return _0x432a();}
