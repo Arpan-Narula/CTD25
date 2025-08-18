@@ -6,12 +6,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Here</title>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-            const textToCopy = "";
-            navigator.clipboard.writeText(textToCopy)     
-            });
-        </script>
     </head>
 
 
@@ -52,26 +46,9 @@
                     </p>
                 <div>
             </div>
-
-            <div style="margin-top: 20px;">
-                <input type="text" id="myTextBox" value="Copy Me 🙂" style="width: 300px; padding: 5px; font-size: 16px;">
-                <button onclick="copyText()" style="padding: 5px 10px; font-size: 16px; margin-left: 10px;">Copy</button>
-            </div>
         </center>
-
-        <script>
-            function copyText() {
-                var textBox = document.getElementById("myTextBox");
-                navigator.clipboard.writeText(textBox.value)
-                    .then(() => {
-                        alert("Copied to clipboard!");
-                    })
-                    .catch(err => {
-                        alert("Failed to copy!");
-                    });
-            }
-        </script>
     </body>
 
 
 </html>
+
