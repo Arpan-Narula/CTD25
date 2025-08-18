@@ -1,8 +1,10 @@
-for (let i = 0x0; i < 0x5; i++) {
-  document.addEventListener("DOMContentLoaded", function () {
-    navigator.clipboard.writeText("  D{           _connected}");
-  });
-}
+document.addEventListener("DOMContentLoaded", function () {
+  navigator.clipboard.writeText("  D{           _connected}")
+    .catch(err => {
+      // Optional: inform the user to click a button if auto-copy fails
+      console.warn('Clipboard copy failed:', err);
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('reload-copy-btn').addEventListener('click', function () {
