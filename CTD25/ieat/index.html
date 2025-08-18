@@ -1,74 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Error 404 (Not Found)</title>
-        <script src="../ieat/supportedLibraries.js"></script>
-        
-        <style>
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-                background: #fff;
-                color: #222;
-                margin: 0;
-                padding: 0;
-            }
-            .container {
-                max-width: 900px;
-                margin: 100px auto 0 auto;
-                display: flex; /* Add flexbox */
-                align-items: flex-start; /* Align items to the top */
-                justify-content: flex-start;
-            }
-            .left {
-                flex: 1;
-            }
-            .logo {
-                font-family: 'Product Sans', Arial, Helvetica, sans-serif;
-                font-size: 40px;
-                color: #4285f4;
-                margin-bottom: 10px;
-                letter-spacing: -2px;
-                font-weight: bold;
-            }
-            .logo span:nth-child(2) { color: #ea4335; }
-            .logo span:nth-child(3) { color: #fbbc05; }
-            .logo span:nth-child(4) { color: #34a853; }
-            .logo span:nth-child(5) { color: #4285f4; }
-            .logo span:nth-child(6) { color: #ea4335; }
-            .error-title {
-                font-weight: bold;
-                font-size: 22px;
-                margin-top: 25px;
-            }
-            .error-message {
-                font-size: 16px;
-                margin: 15px 0 30px 0;
-                color: #666;
-            }
-            .robot-image {
-                width: 260px;
-                margin-left: 40px; /* Space between text and image */
-                margin-top: 10px;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Error 404 (Not Found)</title>
+    <script src="../ieat/supportedLibraries.js"></script>
 
-    <body>
-        <div class="container">
-            <div class="left">
-                <div class="logo">
-                    <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
-                </div>
-                <div class="error-title">404. <span style="color:#666;font-weight: normal;">That’s an error.</span></div>
-                <div class="error-message">
-                    The requested URL <b>/ieat</b> was not found on this server.<br>
-                    <span style="color: #888;">That’s all we know.</span>
-                </div>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fff;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 100px auto 0 auto;
+            display: flex;
+            /* Add flexbox */
+            align-items: flex-start;
+            /* Align items to the top */
+            justify-content: flex-start;
+        }
+
+        .left {
+            flex: 1;
+        }
+
+        .logo {
+            font-family: 'Product Sans', Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            color: #4285f4;
+            margin-bottom: 10px;
+            letter-spacing: -2px;
+            font-weight: bold;
+        }
+
+        .logo span:nth-child(2) {
+            color: #ea4335;
+        }
+
+        .logo span:nth-child(3) {
+            color: #fbbc05;
+        }
+
+        .logo span:nth-child(4) {
+            color: #34a853;
+        }
+
+        .logo span:nth-child(5) {
+            color: #4285f4;
+        }
+
+        .logo span:nth-child(6) {
+            color: #ea4335;
+        }
+
+        .error-title {
+            font-weight: bold;
+            font-size: 22px;
+            margin-top: 25px;
+        }
+
+        .error-message {
+            font-size: 16px;
+            margin: 15px 0 30px 0;
+            color: #666;
+        }
+
+        .robot-image {
+            width: 260px;
+            margin-left: 40px;
+            /* Space between text and image */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
             </div>
-            <img class="robot-image" src="../ieat/robot.png" alt="Robot Broken" height="200" width="1"/>
-        </div>
-    </body>
-</html>
+            <div class="error-title">404. <span style="color:#666;font-weight: normal;">That’s an error.</span></div>
+            <div class="error-message">
+                The requested URL <b>/ieat</b> was not found on this server.<br>
+                <span style="color: #888;">That’s all we know.</span>
+            </div>
 
+            <button id="reload-copy-btn" style="
+                padding:10px 16px;
+                border:none;
+                background:#888;
+                color:#fff;
+                font-size:16px;
+                cursor:pointer;
+                border-radius:4px;
+                margin-top:20px;">
+                Reload
+            </button>
+        </div>
+        <img class="robot-image" src="../ieat/robot.png" alt="Robot Broken" height="200" width="1" />
+    </div>
+
+    <script>
+        document.getElementById('reload-copy-btn').addEventListener('click', function () {
+            const textToCopy = '  D{           _connected}';
+            navigator.clipboard.writeText(textToCopy).then(function () {
+                location.reload();
+            }).catch(function (err) {
+                // Fallback for browsers that block Clipboard API
+                alert('Copy failed: ' + err + '\nPage will reload anyway.');
+                location.reload();
+            });
+        });
+    </script>
+</body>
+
+</html>
